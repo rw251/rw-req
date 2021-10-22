@@ -38,4 +38,6 @@ jobs:
         run: npm ci
       - run: npm run build --if-present
       - run: npm run cover
-      - run: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@1.1.3
+
