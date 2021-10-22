@@ -1,0 +1,20 @@
+{
+  "name": "rw-req",
+  "version": "1.0.0",
+  "description": "Extremely small node fetch/request replacement",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rw251/rw-req.git"
+  },
+  "author": "Richard Williams <1234richardwilliams@gmail.com> (https://rw251.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rw251/rw-req/issues"
+  },
+  "homepage": "https://github.com/rw251/rw-req#readme"
+}
