@@ -16,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/rw251/rw-req/issues"
   },
-  "homepage": "https://github.com/rw251/rw-req#readme"
+  "homepage": "https://github.com/rw251/rw-req#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^9.1.3",
+    "prettier": "^2.4.1",
+    "sinon": "^11.1.2"
+  }
 }
