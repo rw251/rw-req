@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
@@ -25,3 +25,17 @@ jobs:
         run: npm ci
       - run: npm run build --if-present
       - run: npm test
+  
+  coverage:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+      - name: Install dependencies
+        run: npm ci
+      - run: npm run build --if-present
+      - run: npm run cover
+      - run: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
